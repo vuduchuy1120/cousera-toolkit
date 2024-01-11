@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Coursera URL Extension</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 120px;
+        min-width: 350px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      input {
+        width: 300px;
+        padding: 10px;
+        margin: 10px;
+        box-sizing: border-box;
+      }
+
+      #btnCopy {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      #btnCopy:hover {
+        background-color: #45a049;
+      }
+      .copyright {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Coursera URL Extension</h1>
+      <input type="text" id="modifiedUrl" placeholder="URL cuối cùng" />
+      <button class="my-extension-button" id="btnCopy">Copy URL</button>
+    </div>
+    <hr/>
+    <div class="copyright">
+      &copy; 2024 by HV. All rights reserved.
+    </div>
+    <script src="./popup.js"></script>
+    <script src="./utils/storage.js"></script>
+  </body>
+</html>

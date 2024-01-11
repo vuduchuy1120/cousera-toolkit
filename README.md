@@ -39,7 +39,7 @@
 **Bước 2**: Chọn sang tab Submission.
 ![chrome_17iL7C1pTj](https://github.com/vuduchuy1120/cousera-toolkit/blob/main/asset/chonsubmission.png)
 
-**Bước 3**:Chờ cho trang web load xong sau đó ấn vào tiện ích cousera vừa tải lên để coppy link.
+**Bước 3**:Chờ cho trang web load xong sau đó ấn reload trang rồi vào tiện ích cousera vừa tải lên để coppy link.
 ![chrome_17iL7C1pTj](https://github.com/vuduchuy1120/cousera-toolkit/blob/main/asset/antienich.png)
 
 **Bước 4**: Gửi link cho bạn bè nhờ chấm hộ.

@@ -9,7 +9,9 @@
 ## Các chức năng chính:
 1. Get link bài submit
 2. Tự động chấm max point và chấm comment khi bạn của bạn gửi link bài nhờ chấm hộ.
-
+   
+## Lưu ý nhỏ:
+*Nên ấn reload page 2-3 lần trước khi click vào biểu tượng extension để lấy link để đảm bảo lấy chính xác được link không bị lẫn giữa các bài với nhau*
 ## Hướng dẫn Cài đặt và sử dụng
 ### Hướng dẫn Cài đặt
 

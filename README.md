@@ -13,7 +13,7 @@
 ## Hướng dẫn Cài đặt và sử dụng
 ### Hướng dẫn Cài đặt
 
-**Bước 1**: Tải [bản release mới nhất](https://github.com/makecolour/FU-Autokit/releases/tag/v1.1.1) hoặc clone lại project này.
+**Bước 1**: Tải [bản release mới nhất](https://github.com/vuduchuy1120/cousera-toolkit/releases/tag/v1.0.0) hoặc clone lại project này.
 
 **Bước 2**: Nhấn vào phần **Setting Chrome** , chọn **Extension(Tiện ích mở rộng)** 
 ![chrome_Vf0e44SBBw](https://github.com/vuduchuy1120/cousera-toolkit/blob/main/asset/setting.png)

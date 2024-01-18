@@ -1,36 +1,62 @@
+
 function autoOption() {
-    setTimeout(function () {
-        var checkList = document.querySelectorAll('.rc-OptionsFormPart>div>div:last-child>label'); 
+    var checkList = document.querySelectorAll('.rc-OptionsFormPart>div>div:first-child>label');
+    console.log("autoOption checkList:", checkList);
+
+    if (checkList.length === 0) {
+        console.log("No elements found for autoOption");
+        return;
+    }
+
+    var optionContent = checkList[0].querySelector('.option-contents>div:first-child>span').innerHTML.trim();
+    console.log("autoOption optionContent:", optionContent);
+
+    if (optionContent.charAt(0) === '0') {
+        checkList = document.querySelectorAll('.rc-OptionsFormPart>div>div:last-child>label');
+        console.log("autoOption updated checkList:", checkList);
+
         checkList.forEach(function (check) {
             check.click();
         });
-        setTimeout(autoYesNo, 1000);
-        // Call autoComment() after autoOption() completes
-        setTimeout(autoComment, 1000);
-    }, 3000);
+    } else {
+        checkList.forEach(function (check) {
+            check.click();
+        });
+    }
+
 }
 
 function autoComment() {
-    const divs = document.querySelectorAll("div.rc-MultiLineInputFormPart");
-    if (divs.length === 0) {
-        autoOption();
-        return;
+    const formParts = document.getElementsByClassName("rc-FormPart");
+    for (const form of formParts) {
+        const t = form.getElementsByClassName(
+            "c-peer-review-submit-textarea-field"
+        );
+        for (let l of t) {
+            l.click();
+            l.focus();
+            document.execCommand("insertText", false, "OK");
+        }
     }
-    divs.forEach(div => {
-        const textarea = div.querySelector("textarea");
-        textarea.value = "Ok";
-    });
 }
 
-function autoYesNo(){
+function autoYesNo() {
     var checkList2 = document.querySelectorAll('.rc-YesNoFormPart>div>div:first-child>label');
-    if(checkList2.length === 0){
-        autoOption();
-        return;
-    }
+    console.log("autoYesNo checkList2:", checkList2);
+
     checkList2.forEach(function (check) {
         check.click();
     });
 }
 
-autoOption();
+
+// Call your autoOption function here
+setTimeout(() => {
+    autoYesNo();
+    autoComment();
+    autoOption();
+}, 9000);
+
+// autoYesNo();
+// autoComment();
+// autoOption();
